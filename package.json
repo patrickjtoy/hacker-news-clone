@@ -2,16 +2,22 @@
   "name": "hacker-news",
   "version": "1.0.0",
   "description": "Hacker news clone",
-  "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node esbuild.config.js -w",
+    "build": "node esbuild.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "esbuild": "^0.12.22"
+    "@types/react-dom": "^17.0.9",
+    "esbuild-serve": "^1.0.1",
+    "prettier": "^2.3.2"
   },
   "dependencies": {
+    "fp-ts": "^2.11.1",
+    "io-ts": "^2.2.16",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
